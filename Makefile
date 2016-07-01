@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-CONTAINER_NAME=sjourdan/vault
+CONTAINER_NAME=giantswarm/docker-vault:0.1.0
 
 all: build
 build:	## Build the container

@@ -1,6 +1,4 @@
 FROM alpine:latest
-MAINTAINER Stephane Jourdan <fasten@fastmail.fm>
-ENV REFRESHED_AT 2016-06-21
 ENV VAULT_VERSION 0.6.0
 
 # x509 expects certs to be in this file only.
@@ -14,4 +12,4 @@ EXPOSE 8200
 VOLUME "/config"
 
 ENTRYPOINT ["/bin/vault"]
-CMD ["server", "-dev-listen-address=0.0.0.0:8200", "-dev"]
+CMD ["-h"]
